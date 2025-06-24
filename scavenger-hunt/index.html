@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pathfinder Scavenger Hunt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pathfinder Scavenger Hunt 🕵️‍♀️</h1>
+
+  <section>
+    <h2>🎮 How to Play</h2>
+    <ol>
+      <li>Pick any task and get going!</li>
+      <li>Get proof: take a photo and tag the Community Team.</li>
+      <li>Mark it complete and move to the next one!</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>🏆 Unlock Rewards</h2>
+    <ul>
+      <li>🎁 Complete the first 5 tasks — <strong>Win exclusive swag!</strong></li>
+      <li>🚀 Complete 8 tasks — <strong>Swag + LinkedIn shoutout</strong></li>
+      <li>💎 Complete all 10 — <strong>Swag + shoutout + free certification</strong></li>
+    </ul>
+  </section>
+
+  <form name="scavenger-hunt" method="POST" data-netlify="true" enctype="multipart/form-data">
+    <h2>📩 Submit Your Entry</h2>
+
+    <label>First Name:<br><input type="text" name="first-name" required></label><br>
+    <label>Last Name:<br><input type="text" name="last-name" required></label><br>
+    <label>Business Email:<br><input type="email" name="email" required></label><br>
+
+    <h3>✅ Tasks Completed</h3>
+    <label><input type="checkbox" name="task" value="Agentic Quest"> ⚡ Conquer the Agentic Quest Lightning challenge</label><br>
+    <label><input type="checkbox" name="task" value="Selfie"> 📸 Snap a selfie with the Community Team</label><br>
+    <label><input type="checkbox" name="task" value="Community Wall"> 🎯 Add a dot to the Community Wall</label><br>
+    <label><input type="checkbox" name="task" value="LinkedIn"> 💬 Post on LinkedIn and tag the Community Team</label><br>
+    <label><input type="checkbox" name="task" value="Gartner Review"> ✍ Submit a Gartner review</label><br>
+    <label><input type="checkbox" name="task" value="MVP Chat"> 🤝 Have a chat with our MVPs</label><br>
+    <label><input type="checkbox" name="task" value="Join Chapter"> 🌍 Join a Pathfinder Community Chapter</label><br>
+    <label><input type="checkbox" name="task" value="Speaker Signup"> 🎤 Sign up to be a speaker</label><br>
+    <label><input type="checkbox" name="task" value="Hands-on Session"> 🛠 Join a Hands-on Build session</label><br>
+    <label><input type="checkbox" name="task" value="Meet Jo"> 🎓 Meet Jo at the AAU Booth</label><br>
+
+    <label><br>Upload Proof (optional):<br><input type="file" name="upload"></label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
